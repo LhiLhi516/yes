@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diameter Calculator - Lhi</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+    <h2>Lee</h2>
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="calcu.html">Calculator</a></li>
+<li><a href="area.html">Area</a></li>
+<li><a href="volume.html">Volume</a></li>
+<li><a href="perimeter.html">Perimeter</a></li>
+<li><a class="active" href="diameter.html">Diameter</a></li>
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1 class="page-title">Circle Calculator</h1>
+
+<div class="cards">
+
+<!-- Diameter -->
+
+<div class="card">
+
+<h2>Diameter</h2>
+
+<p><b>Formula:</b> D = 2 × Radius</p>
+
+<input type="number" id="radius1" placeholder="Radius">
+
+<button onclick="calculateDiameter()">Solve</button>
+
+<h3 id="diameterResult"></h3>
+
+</div>
+
+<!-- Radius -->
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p><b>Formula:</b> R = Diameter ÷ 2</p>
+
+<input type="number" id="diameter1" placeholder="Diameter">
+
+<button onclick="calculateRadius()">Solve</button>
+
+<h3 id="radiusResult"></h3>
+
+</div>
+
+<!-- Circumference -->
+
+<div class="card">
+
+<h2>Circumference</h2>
+
+<p><b>Formula:</b> C = 2πr</p>
+
+<input type="number" id="radius2" placeholder="Radius">
+
+<button onclick="calculateCircumference()">Solve</button>
+
+<h3 id="circumferenceResult"></h3>
+
+</div>
+
+<!-- Area -->
+
+<div class="card">
+
+<h2>Circle Area</h2>
+
+<p><b>Formula:</b> A = πr²</p>
+
+<input type="number" id="radius3" placeholder="Radius">
+
+<button onclick="calculateCircleArea()">Solve</button>
+
+<h3 id="circleAreaResult"></h3>
+
+</div>
+
+<!-- Radius from Circumference -->
+
+<div class="card">
+
+<h2>Radius from Circumference</h2>
+
+<p><b>Formula:</b> R = C ÷ 2π</p>
+
+<input type="number" id="circumferenceInput" placeholder="Circumference">
+
+<button onclick="calculateRadiusFromCircumference()">Solve</button>
+
+<h3 id="radiusCircResult"></h3>
+
+</div>
+
+<!-- Diameter from Circumference -->
+
+<div class="card">
+
+<h2>Diameter from Circumference</h2>
+
+<p><b>Formula:</b> D = C ÷ π</p>
+
+<input type="number" id="circInput" placeholder="Circumference">
+
+<button onclick="calculateDiameterFromCircumference()">Solve</button>
+
+<h3 id="diamCircResult"></h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>
+
+© 2026 Lhi Deaniel. The One and Only.
+
+</p>
+
+</footer>
+
+</body>
+</html>

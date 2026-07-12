@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Lee Calculator </title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <nav>
+    <div class="logo">
+        <h2>Lee</h2>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="calcu.html">Calculator</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="perimeter.html">Perimeter</a></li>
+        <li><a href="diameter.html">Diameter</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="calculator">
+
+<h2 class="title" Lee Calculator </h2>
+
+<input type="text" id="display" readonly>
+
+<div class="buttons">
+
+<button class="clear" onclick="clearDisplay()">AC</button>
+<button class="operator" onclick="deleteLast()">⌫</button>
+<button class="operator" onclick="append('%')">%</button>
+<button class="operator" onclick="append('/')">÷</button>
+
+<button class="number" onclick="append('7')">7</button>
+<button class="number" onclick="append('8')">8</button>
+<button class="number" onclick="append('9')">9</button>
+<button class="operator" onclick="append('*')">×</button>
+
+<button class="number" onclick="append('4')">4</button>
+<button class="number" onclick="append('5')">5</button>
+<button class="number" onclick="append('6')">6</button>
+<button class="operator" onclick="append('-')">−</button>
+
+<button class="number" onclick="append('1')">1</button>
+<button class="number" onclick="append('2')">2</button>
+<button class="number" onclick="append('3')">3</button>
+<button class="operator" onclick="append('+')">+</button>
+
+<button class="number zero" onclick="append('0')">0</button>
+<button class="number" onclick="append('.')">.</button>
+<button class="equal" onclick="calculate()">=</button>
+
+
+</div>
+
+</div>
+
+<script>
+
+let display = document.getElementById("display");
+
+function append(value){
+    display.value += value;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function deleteLast(){
+    display.value = display.value.slice(0,-1);
+}
+
+function calculate(){
+
+    try{
+        display.value = eval(display.value);
+    }
+
+    catch{
+        display.value = "Error";
+    }
+
+}
+
+// Keyboard Support
+document.addEventListener("keydown",function(event){
+
+    const key = event.key;
+
+    if(!isNaN(key) || "+-*/.%".includes(key)){
+        append(key);
+    }
+
+    else if(key==="Enter"){
+        event.preventDefault();
+        calculate();
+    }
+
+    else if(key==="Backspace"){
+        deleteLast();
+    }
+
+    else if(key==="Escape"){
+        clearDisplay();
+    }
+
+});
+
+</script>
+
+<footer>
+
+<p>
+
+© 2026 Lhi Deaniel. The One and Only.
+
+</p>
+
+</footer>
+
+</body>
+</html>

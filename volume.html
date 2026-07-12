@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Volume Calculator - Lhi</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">
+    <h2>Lee</h2>
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="calcu.html">Calculator</a></li>
+<li><a href="area.html">Area</a></li>
+<li><a class="active" href="volume.html">Volume</a></li>
+<li><a href="perimeter.html">Perimeter</a></li>
+<li><a href="diameter.html">Diameter</a></li>
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1 class="page-title">Volume Calculator</h1>
+
+<div class="cards">
+
+<!-- Cube -->
+
+<div class="card">
+
+<h2>Cube</h2>
+
+<p><b>Formula:</b> V = Side³</p>
+
+<input type="number" id="cubeSide" placeholder="Side">
+
+<button onclick="cubeVolume()">Solve</button>
+
+<h3 id="cubeResult"></h3>
+
+</div>
+
+<!-- Rectangular Prism -->
+
+<div class="card">
+
+<h2>Rectangular Prism</h2>
+
+<p><b>Formula:</b> V = Length × Width × Height</p>
+
+<input type="number" id="prismLength" placeholder="Length">
+
+<input type="number" id="prismWidth" placeholder="Width">
+
+<input type="number" id="prismHeight" placeholder="Height">
+
+<button onclick="prismVolume()">Solve</button>
+
+<h3 id="prismResult"></h3>
+
+</div>
+
+<!-- Cylinder -->
+
+<div class="card">
+
+<h2>Cylinder</h2>
+
+<p><b>Formula:</b> V = πr²h</p>
+
+<input type="number" id="cylinderRadius" placeholder="Radius">
+
+<input type="number" id="cylinderHeight" placeholder="Height">
+
+<button onclick="cylinderVolume()">Solve</button>
+
+<h3 id="cylinderResult"></h3>
+
+</div>
+
+<!-- Cone -->
+
+<div class="card">
+
+<h2>Cone</h2>
+
+<p><b>Formula:</b> V = (πr²h) ÷ 3</p>
+
+<input type="number" id="coneRadius" placeholder="Radius">
+
+<input type="number" id="coneHeight" placeholder="Height">
+
+<button onclick="coneVolume()">Solve</button>
+
+<h3 id="coneResult"></h3>
+
+</div>
+
+<!-- Sphere -->
+
+<div class="card">
+
+<h2>Sphere</h2>
+
+<p><b>Formula:</b> V = (4/3)πr³</p>
+
+<input type="number" id="sphereRadius" placeholder="Radius">
+
+<button onclick="sphereVolume()">Solve</button>
+
+<h3 id="sphereResult"></h3>
+
+</div>
+
+<!-- Triangular Prism -->
+
+<div class="card">
+
+<h2>Triangular Prism</h2>
+
+<p><b>Formula:</b> V = (½ × Base × Height) × Length</p>
+
+<input type="number" id="tpBase" placeholder="Triangle Base">
+
+<input type="number" id="tpHeight" placeholder="Triangle Height">
+
+<input type="number" id="tpLength" placeholder="Prism Length">
+
+<button onclick="triangularPrismVolume()">Solve</button>
+
+<h3 id="tpResult"></h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>
+
+© 2026 Lhi Deaniel. The One and Only.
+
+</p>
+
+</footer>
+
+</body>
+</html>

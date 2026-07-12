@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Area Calculator - Lhi</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="logo">
+        <h2>Lee</h2>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calcu.html">Calculator</a></li>
+        <li><a class="active" href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="perimeter.html">Perimeter</a></li>
+        <li><a href="diameter.html">Diameter</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<h1 class="page-title">Area Calculator</h1>
+
+<div class="cards">
+
+<!-- Rectangle -->
+<div class="card">
+
+<h2>Rectangle</h2>
+
+<p><b>Formula:</b> A = Length × Width</p>
+
+<input type="number" id="rectLength" placeholder="Length">
+
+<input type="number" id="rectWidth" placeholder="Width">
+
+<button onclick="rectangleArea()">Solve</button>
+
+<h3 id="rectangleResult"></h3>
+
+</div>
+
+<!-- Square -->
+<div class="card">
+
+<h2>Square</h2>
+
+<p><b>Formula:</b> A = Side²</p>
+
+<input type="number" id="squareSide" placeholder="Side">
+
+<button onclick="squareArea()">Solve</button>
+
+<h3 id="squareResult"></h3>
+
+</div>
+
+<!-- Triangle -->
+<div class="card">
+
+<h2>Triangle</h2>
+
+<p><b>Formula:</b> A = ½ × Base × Height</p>
+
+<input type="number" id="triangleBase" placeholder="Base">
+
+<input type="number" id="triangleHeight" placeholder="Height">
+
+<button onclick="triangleArea()">Solve</button>
+
+<h3 id="triangleResult"></h3>
+
+</div>
+
+<!-- Circle -->
+<div class="card">
+
+<h2>Circle</h2>
+
+<p><b>Formula:</b> A = πr²</p>
+
+<input type="number" id="circleRadius" placeholder="Radius">
+
+<button onclick="circleArea()">Solve</button>
+
+<h3 id="circleResult"></h3>
+
+</div>
+
+<!-- Parallelogram -->
+<div class="card">
+
+<h2>Parallelogram</h2>
+
+<p><b>Formula:</b> A = Base × Height</p>
+
+<input type="number" id="paraBase" placeholder="Base">
+
+<input type="number" id="paraHeight" placeholder="Height">
+
+<button onclick="parallelogramArea()">Solve</button>
+
+<h3 id="parallelogramResult"></h3>
+
+</div>
+
+<!-- Trapezoid -->
+<div class="card">
+
+<h2>Trapezoid</h2>
+
+<p><b>Formula:</b> A = ½(a+b)h</p>
+
+<input type="number" id="trapA" placeholder="Base 1">
+
+<input type="number" id="trapB" placeholder="Base 2">
+
+<input type="number" id="trapHeight" placeholder="Height">
+
+<button onclick="trapezoidArea()">Solve</button>
+
+<h3 id="trapezoidResult"></h3>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>
+
+© 2026 Lhi Deaniel. The One and Only.
+
+</p>
+
+</footer>
+
+</body>
+</html>
