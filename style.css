@@ -487,3 +487,12 @@ body{
     margin-top:20px;
     color:#2196F3;
 }
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    font-size:24px;
+}
